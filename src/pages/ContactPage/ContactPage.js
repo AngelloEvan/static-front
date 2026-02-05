@@ -1,7 +1,18 @@
 import React from 'react';
 import './ContactPage.css';
 
+const formatPhone = (value) => {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (digits.length <= 2) return digits.length === 2 ? `(${digits}) ` : digits ? `(${digits}` : '';
+  if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+};
+
 const ContactPage = () => {
+  const handlePhoneChange = (e) => {
+    e.target.value = formatPhone(e.target.value);
+  };
+
   return (
     <div className="contact-page-container">
       <h2>Fale Conosco</h2>
@@ -25,8 +36,16 @@ const ContactPage = () => {
             </div>
             
             <div className="form-group">
-              <label htmlFor="phone">Telefone:</label>
-              <input type="tel" id="phone" name="phone" />
+              <label htmlFor="phone">Celular:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(41) 99999-9999"
+                pattern="^\(\d{2}\) 9\d{4}-\d{4}$"
+                title="Digite um celular válido: (XX) 9XXXX-XXXX"
+                onInput={handlePhoneChange}
+              />
             </div>
             
             <div className="form-group">

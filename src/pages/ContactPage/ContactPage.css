@@ -72,16 +72,20 @@
 
 .form-group input[type="text"],
 .form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group textarea {
   width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
+  min-height: 42px;
+  box-sizing: border-box;
 }
 
 .form-group textarea {
   resize: vertical;
+  min-height: 120px; /* Mantém altura maior que os inputs */
 }
 
 .submit-button {
@@ -161,8 +165,10 @@
 @media (max-width: 480px) {
   .contact-form input[type="text"],
   .contact-form input[type="email"],
+  .contact-form input[type="tel"],
   .contact-form textarea {
     width: 100%; /* Ocupa 100% da largura em telas muito pequenas */
-    padding: 8px 0;
+    padding: 8px 10px;
+    box-sizing: border-box;
   }
 }
