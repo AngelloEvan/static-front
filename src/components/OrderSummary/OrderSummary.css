@@ -13,9 +13,10 @@
   color: #333;
   margin-bottom: 25px;
   font-size: 1.8em;
-  border-bottom: 2px solid #007bff;
+  font-style: italic;
   padding-bottom: 10px;
   display: inline-block;
+  font-family: ui-serif;
 }
 
 .order-summary-container.empty p {
@@ -54,7 +55,7 @@
   flex: 1;
   text-align: right;
   font-weight: bold;
-  color: #007bff;
+  color:#666;
 }
 
 .item-quantity-controls {
@@ -63,6 +64,7 @@
   gap: 8px;
   flex: 1; /* Ocupa espaço para os controles */
   justify-content: flex-end; /* Alinha os controles à direita */
+  margin-left: 10px; /* Espaço entre o preço e o botão '-' */
 }
 
 .item-quantity-controls button {
@@ -107,12 +109,12 @@
 }
 
 .total-amount {
-  color: #28a745; /* Verde para o total */
+  color: #666; /* Verde para o total */
 }
 
-.whatsapp-button {
-  background-color: #25d366; /* Cor verde WhatsApp */
-  color: white;
+.whatsapp-button { /*whatzap*/
+  background-color:#ccc;
+  color: #25d366;
   border: none;
   border-radius: 25px; /* Botão mais arredondado */
   padding: 15px 30px;
@@ -129,6 +131,7 @@
 
 .whatsapp-button:hover {
   background-color: #1da851;
+  color: white; 
   transform: translateY(-2px);
 }
 

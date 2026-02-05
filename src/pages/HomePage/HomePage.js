@@ -3,37 +3,29 @@ import Carousel from '../../components/Carousel/Carousel';
 import ProductCard from '../../components/ProductCard/ProductCard'; 
 import OrderSummary from '../../components/OrderSummary/OrderSummary';
 import productsData from '../../data/products'; 
-
-
-// --- Importe suas imagens locais aqui ---
-import empadao from '../../assets/img/empadao.jpg';
-import cafe3 from '../../assets/img/cafe3.jpg'; 
-import boloFuba from '../../assets/img/boloFuba.jpg';
-    
-// Adicione mais imports para cada imagem de produto que você tiver!
+import { cloudinaryUrlSimple, CLOUDINARY_FOLDER } from '../../config/cloudinary';
 
 import './HomePage.css';
 
 const HomePage = () => {
   const carouselItems = [
-    // ... (Seus itens do carrossel permanecem aqui)
     {
       id: 1,
-      image: empadao,
+      image: cloudinaryUrlSimple('empadao', CLOUDINARY_FOLDER),
       title: 'Empadão super cremoso',
       description: 'Confira nossa variadade em sabores!',
       link: '/produto/lancamento-exclusivo'
     },
     {
       id: 2,
-      image: cafe3,
+      image: cloudinaryUrlSimple('cafe3', CLOUDINARY_FOLDER),
       title: 'Pratos incríveis',
       description: 'Aproveite as nossas promoções!',
       link: '/categoria/ofertas'
     },
     {
       id: 3,
-      image: boloFuba,
+      image: cloudinaryUrlSimple('boloFuba', CLOUDINARY_FOLDER),
       title: 'Bolos feitos com amor',
       description: 'Peça um pra compartilhar com as pessoas mais importantes!',
       link: '/categoria/inverno'

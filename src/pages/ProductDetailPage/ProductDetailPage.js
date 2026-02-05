@@ -29,9 +29,17 @@ const ProductDetailPage = () => {
         </div>
         <div className="product-detail-info">
           <h2 className="product-detail-name">{product.name}</h2>
-          <p className="product-detail-price">{product.price}</p>
           <p className="product-detail-description">{product.description}</p>
-           <Link to="/" className="back-to-home-button">Voltar</Link>
+          <p className="product-detail-price">{product.price}</p>
+
+        
+             <Link 
+                  to="/"
+                  className="back-button" // Sua classe deve estilizar o <a>
+                  text-
+                >
+                  ← Voltar
+                </Link>
         </div>
       </div>
     </div>
