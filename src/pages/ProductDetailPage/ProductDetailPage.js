@@ -1,10 +1,11 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom'; // Para pegar o ID da URL
+import { useParams, useNavigate } from 'react-router-dom';
 import productsData from '../../data/products'; // Importa os dados dos produtos
 import './ProductDetailPage.css'; // Estilos para a página de detalhes
 
 const ProductDetailPage = () => {
-  const { id } = useParams(); // Pega o 'id' da URL (ex: /produto/1)
+  const { id } = useParams();
+  const navigate = useNavigate();
 
   // Encontra o produto correspondente no array de dados
   const product = productsData.find(p => p.id === parseInt(id));
@@ -32,14 +33,13 @@ const ProductDetailPage = () => {
           <p className="product-detail-description">{product.description}</p>
           <p className="product-detail-price">{product.price}</p>
 
-        
-             <Link 
-                  to="/"
-                  className="back-button" // Sua classe deve estilizar o <a>
-                  text-
-                >
-                  ← Voltar
-                </Link>
+          <button
+            type="button"
+            className="back-button"
+            onClick={() => navigate(-1)}
+          >
+            ← Voltar
+          </button>
         </div>
       </div>
     </div>

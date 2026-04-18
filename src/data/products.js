@@ -34,10 +34,10 @@ const products = [
   },
   {
     id: 4,
-    name: 'Empadinha de calabresa',
+    name: 'Empadinha de Frango com Requeijão',
     price: 'R$ 5,00',
-    imageUrl: cloudinaryUrlSimple('calabresa', CLOUDINARY_FOLDER),
-    description: 'feita com camarão rose.',
+    imageUrl: cloudinaryUrlSimple('requeijao', CLOUDINARY_FOLDER),
+    description: 'feita com requeijão cremoso.',
     category: 'salgado',
   },
   {
@@ -55,6 +55,22 @@ const products = [
     imageUrl: cloudinaryUrlSimple('frangoPalmito', CLOUDINARY_FOLDER),
     description: 'feita com palmitos selecionados.',
     category: 'salgado',
+  },
+  {
+  id: 7,
+    name: 'sensação',
+    price: 'R$ 15,00',
+    imageUrl: cloudinaryUrlSimple('sensação', CLOUDINARY_FOLDER),
+    description: 'chocolate e morangos.',
+    category: 'pote',
+  },
+   {
+  id: 8,
+    name: 'bolo de pote de abacaxi',
+    price: 'R$ 15,00',
+    imageUrl: cloudinaryUrlSimple('abacaxi', CLOUDINARY_FOLDER), 
+    description: 'massa de baunilha e abacaxi.',
+    category: 'pote',
   },
 ];
 

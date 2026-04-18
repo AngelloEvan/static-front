@@ -1,0 +1,143 @@
+.atelier-gallery-page {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(20, 20, 20, 0.97);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px 80px;
+  box-sizing: border-box;
+}
+
+.atelier-gallery-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2010;
+}
+
+.atelier-gallery-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.atelier-gallery-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 1100px;
+  flex: 1;
+  min-height: 0;
+}
+
+.atelier-gallery-nav {
+  flex-shrink: 0;
+  width: 48px;
+  height: 72px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.atelier-gallery-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.atelier-gallery-figure {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+}
+
+.atelier-gallery-image {
+  max-width: 100%;
+  max-height: min(70vh, 720px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.atelier-gallery-caption {
+  margin-top: 20px;
+  max-width: 640px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.atelier-gallery-counter {
+  margin: 16px 0 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.atelier-gallery-hint {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+.atelier-gallery-empty {
+  text-align: center;
+}
+
+.atelier-gallery-empty-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  margin: 0 0 20px;
+}
+
+.atelier-gallery-back-link {
+  color: #ff6b6b;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.atelier-gallery-back-link:hover {
+  color: #ff8e8e;
+}
+
+@media (max-width: 600px) {
+  .atelier-gallery-main {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .atelier-gallery-nav-prev,
+  .atelier-gallery-nav-next {
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+    font-size: 28px;
+  }
+
+  .atelier-gallery-hint {
+    display: none;
+  }
+}

@@ -171,6 +171,7 @@
 
 /* Estilo para o botão de voltar */
 .back-button {
+  font: inherit;
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   color: white;
   border: none;

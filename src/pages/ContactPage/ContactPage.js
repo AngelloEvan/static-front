@@ -74,6 +74,7 @@ const ContactPage = () => {
             <a href="https://instagram.com/donaempadinha_" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
               <img src="https://img.icons8.com/ios-filled/50/007bff/instagram-new.png" alt="Instagram" />
             </a>
+            <p>Instagran</p>
             {/* Adicione mais ícones conforme necessário */}
           </div>
         </div>

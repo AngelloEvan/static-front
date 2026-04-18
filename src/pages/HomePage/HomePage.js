@@ -18,15 +18,15 @@ const HomePage = () => {
     },
     {
       id: 2,
-      image: cloudinaryUrlSimple('cafe3', CLOUDINARY_FOLDER),
+      image: cloudinaryUrlSimple('empadinha_chocolate2', CLOUDINARY_FOLDER),
       title: 'Pratos incríveis',
       description: 'Aproveite as nossas promoções!',
       link: '/categoria/ofertas'
     },
     {
       id: 3,
-      image: cloudinaryUrlSimple('boloFuba', CLOUDINARY_FOLDER),
-      title: 'Bolos feitos com amor',
+      image: cloudinaryUrlSimple('camafeu', CLOUDINARY_FOLDER),
+      title: 'doces feitos com amor',
       description: 'Peça um pra compartilhar com as pessoas mais importantes!',
       link: '/categoria/inverno'
     },

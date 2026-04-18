@@ -1,0 +1,131 @@
+.atelier-page-container {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+
+.atelier-page-container h2 {
+  font-family: "Island Moments", cursive;
+  font-size: 64px;
+  color: #666;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+.atelier-intro {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+ 
+}
+
+.atelier-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border: none;
+  padding: 50px 30px; 
+  box-shadow: 0 1px 5px #ff6b6b;
+}
+
+.atelier-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+}
+
+.atelier-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.atelier-image-wrapper {
+  flex: 1.5;
+  min-width: 0;
+}
+
+.atelier-image-button {
+  display: block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 85%;
+  text-align: left;
+  font: inherit;
+}
+
+.atelier-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  filter: grayscale(60%) brightness(0.85);
+  transition: all 0.5s ease;
+}
+
+.atelier-image-button:hover .atelier-image,
+.atelier-image-button:focus-visible .atelier-image {
+  filter: grayscale(0%) brightness(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.atelier-image-button:focus-visible {
+  outline: 2px solid #ff6b6b;
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+
+.atelier-text-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.atelier-text {
+  font-family: "Island Moments", cursive;
+  font-size: 30px;
+  color: #444;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .atelier-page-container h2 {
+    font-size: 2.5em;
+  }
+
+  .atelier-row,
+  .atelier-row-reverse {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .atelier-image-button {
+    width: 100%;
+  }
+
+  .atelier-image {
+    height: 220px;
+    filter: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .atelier-text {
+    text-align: center;
+    font-family: "Island Moments", cursive;
+    font-size: 15px;
+  }
+}

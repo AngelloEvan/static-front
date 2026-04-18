@@ -5,6 +5,8 @@ import ProductListingPage from './pages/ProductListingPage/ProductListingPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import SuccessPage from './pages/SuccessPage/SuccessPage';
 import ProductDetailPage from './pages/ProductDetailPage/ProductDetailPage';
+import AtelierPage from './pages/AtelierPage/AtelierPage';
+import AtelierGalleryPage from './pages/AtelierGalleryPage/AtelierGalleryPage';
 import OrderSummary from './components/OrderSummary/OrderSummary';
 import Navbar from './components/Navbar/Navbar';
 import { OrderProvider } from './context/OrderContext';
@@ -25,6 +27,8 @@ function App() {
               <Route path="/contato" element={<ContactPage />} />
               <Route path="/success" element={<SuccessPage />} />
               <Route path="/produto/:id" element={<ProductDetailPage />} />
+              <Route path="/atelier" element={<AtelierPage />} />
+              <Route path="/atelier/galeria/:sectionId" element={<AtelierGalleryPage />} />
               <Route path="/meu-pedido" element={<OrderSummary />} />
             </Routes>
           </main>
