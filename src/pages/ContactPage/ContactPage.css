@@ -110,6 +110,16 @@
   color: #444;
 }
 
+.contact-whatsapp-link {
+  color: #128c7e;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.contact-whatsapp-link:hover {
+  color: #25d366;
+}
+
 /* Estilos para redes sociais */
 .social-media-links {
   margin-top: 30px;

@@ -63,7 +63,17 @@ const ContactPage = () => {
           <p>Se preferir, entre em contato pelos canais abaixo:</p>
           <div className="contact-details">
             <p><strong>E-mail:</strong> contato@dallazuana.com</p>
-            <p><strong>Telefone:</strong> (41) 99844-3944</p>
+            <p>
+              <strong>Telefone / WhatsApp:</strong>{' '}
+              <a
+                href="https://wa.me/5541998443944"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-whatsapp-link"
+              >
+                (41) 99844-3944
+              </a>
+            </p>
             <p><strong>Endereço:</strong> Pinheirinho, Curitiba/PR</p>
             <p><strong>Horário de Atendimento:</strong> Seg-Sex: 9h-18h</p>
           </div>
