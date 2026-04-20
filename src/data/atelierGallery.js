@@ -18,6 +18,10 @@ export const atelierSections = [
        {
         image: cloudinaryUrlSimple('bolo_rosa', CLOUDINARY_FOLDER),
         caption: 'Sabores que combinam com qualquer celebração.',
+      },
+      {
+        image: cloudinaryUrlSimple('bolo_pote_chocolate', CLOUDINARY_FOLDER),
+        caption: 'Sabores que combinam com qualquer celebração.',
       }
     ],
   },
